@@ -11,14 +11,22 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Dreamer
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="{% url 'showmain' %}">드리머 소개</a></li>
+                        <li><a class="dropdown-item" href="{% url 'showmentors' %}">드리머 멘토 소개</a></li>
+                        <li><a class="dropdown-item" href="#">활동 소개</a></li>
+                        <li><a class="dropdown-item" href="{% url 'showrecruit' %}">모집</a></li>
+                    </ul>
+                    </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'showrecruit' %}">모집</a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'showmain' %}">Dreamer 소개</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'showmentors' %}">멘토 소개</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'showrecruit' %}">드리머 멘토가 되고 싶다면?</a>
+                    <a class="nav-link active" href="#">드포프💡</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="{% url 'showcontact' %}">Contact</a>
