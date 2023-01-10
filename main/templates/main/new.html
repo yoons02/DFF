@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>메세지</h1>
+
+<!-- {{blogs}} -->
+<div>
+    {% for blog in blogs %}
+    <div>
+        <h3>#{{blog.id}}</h3>
+        <h3>{{blog.writer}}</h3>
+        <h3>{{blog.body}}</h3>
+    </div>
+    <a href="{% url 'main:delete' blog.id%}">삭제하기</a>
+    {% endfor %}
+</div>
+
+{% else %}
+
+    <form action="{% url 'main:create' %}" method="post">
+        {% csrf_token %}
+        <p>작성자 : <input type="text" name="writer"></p>
+        <p>내용 : <textarea type="text" name="body"></textarea></p>
+        <button type="submit">제출</button>
+    </form>
+
+{% endif %}
+
+{% endblock %}

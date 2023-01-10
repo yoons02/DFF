@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>메세지</h1>
+
+    <!-- {{blogs}} -->
+    <div>
+        {% for blog in blogs %}
+        <div>
+            <h3>#{{blog.id}}</h3>
+            <h3>{{blog.writer}}</h3>
+            <h3>{{blog.body}}</h3>
+        </div>
+        <a href="{% url 'main:delete' blog.id%}">삭제하기</a>
+        {% endfor %}
+    </div>
+
+{% endblock %}

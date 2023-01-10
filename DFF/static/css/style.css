@@ -1,5 +1,43 @@
 body {
-    /* background: linear-gradient(#CC4900 -20%, #ffc824 60%) fixed; */
-    background-color: white;
+    /* background: linear-gradient(#ffffff -10%, #ffc824 80%) fixed; */
+    background-color: rgb(255, 255, 255);
     width: 100%;
 }
+
+#logo {
+    width : 160px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#grown {
+    width : 40%;
+}
+
+/* ---------디졸브---------- */
+#index_03{
+    width: 1200px;
+    height: 400px;
+    border: 1px solid dimgrey;
+    margin: 0 auto;
+}
+
+#header3{
+    height: 100px;
+    border-bottom: 1px solid dimgrey;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.5rem;
+}
+
+#slide3{
+    height: 300px;
+    border-bottom: 1px solid dimgrey;
+}
+
+#slide3>ul>li{
+    position: absolute;
+    font-size: 0;
+}
+/* ------------------------ */
