@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<form action="{% url 'accounts:login' %}" method="POST">
-    {% csrf_token %}
-    id : <input type="text" name="username"><br>
-    password : <input type="password" name="password"><br>
-    <input type="submit" value="login">
-</form>
+<div class="login">
+    <form action="{% url 'accounts:login' %}" method="POST">
+        {% csrf_token %}
+        <img id="login_logo" src="https://ifh.cc/g/G9OT9L.png">
+        <div id="id">
+            <input type="text" id="input_id" name="username" placeholder="아이디"><br>
+        </div>
+        <div id="password">
+            <input type="password" id="input_pwd" name="password" placeholder="비밀번호"><br>
+        </div>  
+        <input type="submit" id="login_button" value="login">
+    </form>
+</div>
 
 {% endblock %}

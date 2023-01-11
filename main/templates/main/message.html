@@ -1,19 +1,18 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
 
-    <h1>메세지</h1>
+    <h1>드리머 멘토 앞으로 온 편지</h1>
 
     <!-- {{blogs}} -->
     <div>
         {% for blog in blogs %}
-        <div>
-            <h3>#{{blog.id}}</h3>
-            <h3>{{blog.writer}}</h3>
-            <h3>{{blog.body}}</h3>
+        <div id="message">
+            <h3 id="blog_id">#{{blog.id}}</h3>
+            <h3 id="blog_writer">{{blog.writer}}</h3>
+            <h3 id="blog_body">{{blog.body}}</h3>
+            <a href="{% url 'main:delete' blog.id%}">삭제하기</a>
         </div>
-        <a href="{% url 'main:delete' blog.id%}">삭제하기</a>
         {% endfor %}
     </div>
 
