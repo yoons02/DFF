@@ -28,8 +28,8 @@ def showmessage(request):
 def showdreamer(request):
     return render(request, 'main/dreamer.html')
 
-def showtoMentor(request):
-    return render(request, 'main/toMentor.html')
+def showthanks(request):
+    return render(request, 'main/thanks.html')
 
 def showNew(request):
     if request.method == "GET":
@@ -38,8 +38,11 @@ def showNew(request):
 def showcomplete(request):
     return render(request, 'main/complete.html')
         
-def showForyou(request):
-    return render(request, 'main/foryou.html') 
+def showPwd(request):
+    return render(request, 'main/pwd.html') 
+
+def showPwd_2(request):
+    return render(request, 'main/pwd_2.html') 
 
 def create(request):
     new_blog = Blog()

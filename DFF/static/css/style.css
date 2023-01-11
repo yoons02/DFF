@@ -3,6 +3,8 @@ body {
     background-color: rgb(255, 255, 255);
     width: 100%;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 #logo {
@@ -29,11 +31,17 @@ body {
 #input_id{
     width : 310px;
     margin: 30px 0px 20px 0px;
+    border-radius: 8px;
+    border: 1px solid #F79400;
+    padding: 5px 10px;
 }
 
 #input_pwd{
     width : 310px;
     margin: 0px 0px 30px 0px;
+    border-radius: 8px;
+    border: 1px solid #F79400;
+    padding: 5px 10px;
 }
 
 #login_button{
@@ -76,11 +84,34 @@ body {
     border-radius: 8px;
 }
 
+#message_title{
+    text-align: center;
+}
+
+.message{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 #message{
-    border: 1px solid black;
+    width: 400px;
+    border: 2px solid #F79400;
     margin: 10px;
     border-radius: 5px;
     padding: 13px;
+    box-shadow: 0px 0px 4px gray;
+}
+
+@media ( min-width: 500px ) {
+    #message{
+        width: calc(100%/4.4);
+        border: 2px solid #F79400;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 13px;
+        box-shadow: 0px 0px 4px gray;
+    }
 }
 
 .recruit{
@@ -93,6 +124,75 @@ body {
 
 #poster{
     width: 85%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+#password_2{
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 310px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #F79400;
+    padding: 3px
+}
+
+#check_button{
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 310px;
+    color: white;
+    background-color: #F79400;
+    border: none;
+    border-radius: 8px;
+}
+
+#foryou{
+    width: 350px;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+#toMentors{
+    width: 350px;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+@media ( min-width: 1000px ) {
+    #foryou{
+        width: 500px;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #toMentors{
+        width: 500px;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+.thanks_all{
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+#oh_thanks{
+    width: 50%;
     display: block;
     align-items: center;
     margin: auto;

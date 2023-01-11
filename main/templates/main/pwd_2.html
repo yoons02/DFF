@@ -1,0 +1,32 @@
+<!-- 수고한 멘토에게 -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+    <img id="toMentors" src="https://ifh.cc/g/T3yqMZ.png">
+    <div class="check">
+        <div class="container">
+            <input type="password" placeholder="Password" id="password_2" class="account">
+            <br>
+            <button id="check_button" class="account">확인</button><br><br><br>
+        </div>
+    </div>   
+    <script type="text/javascript">
+            const password = document.getElementById('password_2')
+            const login = document.getElementById('check_button')
+
+            check_button.addEventListener('click', () => {
+                if (password.value == '0000') {
+                        location.href="/new"
+                    }
+                else {
+                    alert('비밀번호를 다시 입력해주세요!')
+                }
+            })
+    </script>
+</body>
+
+{% endblock %}

@@ -1,11 +1,12 @@
+<!-- 멘토에게 보이는 메세지 정리 -->
 {% extends 'base.html' %}
 
 {% block content %}
 
-    <h1>드리머 멘토 앞으로 온 편지</h1>
+    <h1 id="message_title">드리머 멘토 앞으로 온 편지</h1>
 
     <!-- {{blogs}} -->
-    <div>
+    <div class="message">
         {% for blog in blogs %}
         <div id="message">
             <h3 id="blog_id">#{{blog.id}}</h3>

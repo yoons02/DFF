@@ -1,8 +1,11 @@
-$('#slide3>ul>li').hide();
-$('#slide3>ul>li:first-child').show();
+const password = document.getElementById('password')
+const login = document.getElementById('login')
 
-setInterval(function(){
-    $('#slide3>ul>li:first-child').fadeOut()
-    .next().fadeIn().end(1000)
-    .appendTo('#slide3>ul');
-},3000);
+login.addEventListener('click', () => {
+    if (password.value == '0000') {
+            alert('로그인 되었습니다!')
+        }
+        else {
+            alert('비밀번호를 다시 입력해주세요!')
+        }
+})
