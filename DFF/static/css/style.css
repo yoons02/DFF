@@ -11,7 +11,57 @@ body {
     width : 160px;
     height: 30px;
     margin-bottom: 6px;
-    margin-left: 5px;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+    margin-right: 20px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+#welcome{
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin: 0px auto;
+}
+
+#login{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #F79400;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+#logout{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #F79400;
+    border-radius: 15px;
+    padding: 10px 15px;
 }
 
 #grown {
@@ -123,7 +173,7 @@ body {
 }
 
 #poster{
-    width: 85%;
+    width: 100vw;
     display: block;
     align-items: center;
     margin: auto;
@@ -191,9 +241,60 @@ body {
     margin: auto;
 }
 
-#oh_thanks{
-    width: 50%;
+#yoons_thanks{
+    width: 100%;
     display: block;
     align-items: center;
     margin: auto;
+}
+
+#kim_thanks{
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+#oh_thanks{
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+#yu_thanks{
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+@media ( min-width: 1000px ) {
+    #yoons_thanks{
+        width: 50%;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #kim_thanks{
+        width: 50%;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #oh_thanks{
+        width: 50%;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #yu_thanks{
+        width: 50%;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
 }
