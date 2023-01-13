@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="detail">
+        <!-- <img id="letter_tem" src="https://ifh.cc/g/Q4QL0W.jpg"> -->
+        <a id="detail_writer">{{blog.writer}} 님이 드리머 멘토님들께</a><br>
+        <a id="detail_body">{{blog.body}}</a><br>
+        <a id="detail_date">{{blog.pub_date}}</a>
+</div>
+
+{% endblock %}

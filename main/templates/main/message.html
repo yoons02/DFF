@@ -3,18 +3,34 @@
 
 {% block content %}
 
-    <h1 id="message_title">드리머 멘토 앞으로 온 편지</h1>
+    <img id="arrive_letter" src="https://ifh.cc/g/WHVqSj.png">
 
     <!-- {{blogs}} -->
     <div class="message">
         {% for blog in blogs %}
-        <div id="message">
-            <h3 id="blog_id">#{{blog.id}}</h3>
-            <h3 id="blog_writer">{{blog.writer}}</h3>
-            <h3 id="blog_body">{{blog.body}}</h3>
-            <a href="{% url 'main:delete' blog.id%}">삭제하기</a>
+        <div id="message" onclick="modal()" style="cursor: pointer;">
+            <script type="text/javascript">
+                function modal()  {
+                    location.href="{% url 'main:showdetail' blog.id %}"
+                    }
+            </script>
+            <div id="message_content">
+                <div id="blog_id">
+                    <a id="blog_id">#{{blog.id}}</h3>
+                </div>
+                <!-- <a id="blog_writer">{{blog.writer}}</h3> -->
+                <a id="blog_title">{{blog.title}}</a>
+                <!-- <a id="blog_body">{{blog.body}}</a> -->
+            </div>
+            <!-- <div id="blog_time">
+                <a id="blog_time">{{blog.pub_date}}</a>
+            </div> -->
+            <div id="blog_delete">
+                <a id="blog_delete" href="{% url 'main:delete' blog.id%}">삭제하기</a>
+            </div>
         </div>
         {% endfor %}
+
     </div>
 
 {% endblock %}

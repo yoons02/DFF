@@ -24,8 +24,9 @@
     <div class="form">
         <form action="{% url 'main:create' %}" method="post">
             {% csrf_token %}
-            <img id="submit_logo" src="https://ifh.cc/g/ZGpaOB.png"><br>
+            <img id="submit_logo" src="https://ifh.cc/g/Pqc05b.png"><br>
             <input id="writer" type="text" name="writer" placeholder="작성자"><br>
+            <input id="title" type="text" name="title" placeholder="제목"><br>
             <textarea id="content" type="text" name="body" placeholder="수고한 멘토들에게 따뜻한 한마디를 작성해주세요 :)"></textarea><br>
             <button id="submit_button" type="submit">제출</button><br><br><br>
         </form>

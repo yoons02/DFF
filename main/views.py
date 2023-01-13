@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Blog
 from django.utils import timezone
 
@@ -44,13 +44,18 @@ def showPwd(request):
 def showPwd_2(request):
     return render(request, 'main/pwd_2.html') 
 
+def showdetail(request, id):
+    blog = get_object_or_404(Blog, pk=id)
+    return render(request, 'main/detail.html', {'blog':blog})
+
 def create(request):
     new_blog = Blog()
     new_blog.writer = request.POST['writer']
+    new_blog.title = request.POST['title']
     new_blog.pub_date = timezone.now()
     new_blog.body = request.POST['body']
     new_blog.save()
-    return redirect('main:showcomplete')
+    return redirect('main:showdetail', new_blog.id)
 
 def delete(request, id):
     delete_blog = Blog.objects.get(id = id)

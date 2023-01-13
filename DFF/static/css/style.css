@@ -14,6 +14,19 @@ body {
     margin-left: 20px;
 }
 
+#youtube_logo{
+    width : 95px;
+}
+
+#insta_logo{
+    width : 95px;
+    padding-top: 10px;
+}
+
+#blog_logo{
+    width : 95px;
+}
+
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
@@ -26,24 +39,26 @@ body {
     margin-right: 20px;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container{
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    display: block;
-    align-items: center;
-    margin: auto;
+    padding: 0px;
+}
+
+.container-fluid{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 #welcome{
-    width: 100%;
+    width: 100vw;
     display: block;
     align-items: center;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 #login{
@@ -100,6 +115,7 @@ body {
     background-color: #F79400;
     border: none;
     border-radius: 8px;
+    padding: 6px 0px;
 
 }
 
@@ -115,7 +131,18 @@ body {
 
 #writer{
     width : 85%;
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 0px 0px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    border: 1px solid #F79400;
+}
+
+#title{
+    width : 85%;
+    margin: 20px 0px 20px 0px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    border: 1px solid #F79400;
 }
 
 #content{
@@ -124,6 +151,9 @@ body {
     width: 85%;
     height: 200px;
     margin: 0px 0px 30px 0px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    border: 1px solid #F79400;
 }
 
 #submit_button{
@@ -132,6 +162,7 @@ body {
     background-color: #F79400;
     border: none;
     border-radius: 8px;
+    padding: 6px 0px;
 }
 
 #message_title{
@@ -139,37 +170,85 @@ body {
 }
 
 .message{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* margin: 0px auto;
+    align-items: center;
+    display: block; */
+    /* border: 2px solid #F79400;
+    border-radius: 5px; */
+}
+
+#message_content{
+
+}
+
+#blog_id{
+    width: 10px;
+    position: absolute;
+}
+
+#blog_title{
+    position: relative;
+    margin-left: 40px;
+}
+
+#blog_time{
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    margin-left: 20px;
+}
+
+#blog_delete{
+    text-decoration: none;
+    color : gray;
+    text-align: right;
+    position: relative;
 }
 
 #message{
-    width: 400px;
-    border: 2px solid #F79400;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 13px;
-    box-shadow: 0px 0px 4px gray;
+    /* width: calc(100%/2.4); */
+    width: 80%;
+    border: 1px solid #F79400;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: block;
+    align-items: center;
+    margin: 10px auto;
 }
 
 @media ( min-width: 500px ) {
     #message{
-        width: calc(100%/4.4);
-        border: 2px solid #F79400;
-        margin: 10px;
-        border-radius: 5px;
-        padding: 13px;
-        box-shadow: 0px 0px 4px gray;
+        font-size: 18px;
+        /* width: calc(100%/6.3); */
+        width: 70%;
+        border: 1px solid #F79400;
+        border-radius: 8px;
+        padding: 10px 17px;
+        display: block;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    #blog_title{
+        position: relative;
+        margin-left: 60px;
+    }
+
+    #blog_time{
+        text-align: left;
+        position: absolute;
+        width: 100%;
+        margin-left: 30px;
     }
 }
 
 .recruit{
     text-align: center;
-}
-
-#recruit_title{
-    margin: 20px;
+    display: block;
+    align-items: center;
+    margin: auto;
 }
 
 #poster{
@@ -179,9 +258,66 @@ body {
     margin: auto;
 }
 
-.container{
-    margin-top: 30px;
+#ipsi{
+    font-size: 14px;
+    width: 45%;
+    color: white;
+    background-color: #faa627;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-decoration: none;
+    margin: 0px 5px 10px 5px;
 }
+
+#recruit_insta{
+    font-size: 14px;
+    width: 45%;
+    color: white;
+    background-color: #faa627;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-decoration: none;
+    margin: 0px 5px 10px 5px;
+}
+
+#recruit_ment{
+    font-size: 14px;
+    padding-bottom: 40px;
+}   
+
+@media ( min-width: 1000px ) {
+    #ipsi{
+        font-size: 20px;
+        width: 45%;
+        color: white;
+        background-color: #faa627;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 40px;
+        text-decoration: none;
+        margin: 0px 10px 30px 10px;
+    }
+    
+    #recruit_insta{
+        font-size: 20px;
+        width: 45%;
+        color: white;
+        background-color: #faa627;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 40px;
+        text-decoration: none;
+        margin: 0px 10px 30px 10px;
+    }
+
+    #recruit_ment{
+        font-size: 20px;
+        padding-bottom: 100px;
+    }
+}
+
 
 #password_2{
     display: block;
@@ -191,7 +327,7 @@ body {
     text-align: center;
     border-radius: 8px;
     border: 1px solid #F79400;
-    padding: 3px
+    padding: 3px;
 }
 
 #check_button{
@@ -203,20 +339,21 @@ body {
     background-color: #F79400;
     border: none;
     border-radius: 8px;
+    padding: 6px 0px;
 }
 
 #foryou{
     width: 350px;
     display: block;
     align-items: center;
-    margin: auto;
+    margin: 35px auto;
 }
 
 #toMentors{
     width: 350px;
     display: block;
     align-items: center;
-    margin: auto;
+    margin: 35px auto;
 }
 
 @media ( min-width: 1000px ) {
@@ -224,14 +361,14 @@ body {
         width: 500px;
         display: block;
         align-items: center;
-        margin: auto;
+        margin: 30px auto;
     }
     
     #toMentors{
         width: 500px;
         display: block;
         align-items: center;
-        margin: auto;
+        margin: 30px auto;
     }
 }
 
@@ -296,5 +433,125 @@ body {
         display: block;
         align-items: center;
         margin: auto;
+    }
+}
+
+#arrive_letter{
+    width: 100%;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+
+#letter_tem{
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+}
+
+@media ( min-width: 1000px ) {
+    #letter_tem{
+        align-items: center;
+        display: block;
+        margin: auto;
+        margin-left: 20vw;
+        width: 60%;
+        position: absolute;
+        text-align: center;
+    }
+
+    #arrive_letter{
+        width: 90%;
+        align-items: center;
+        display: block;
+        margin: auto;
+    }
+}
+
+.detail{
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+
+#detail_writer{
+    font-size: 16px;
+    margin: auto;
+    margin-top: 70px;
+    text-align: left;
+    display: block;
+    width: 75%;
+    padding: 10px 0px;
+    position: relative;
+    text-decoration: wavy underline;
+    text-decoration-color: #c8c7c7;
+    text-underline-offset : 7px;
+}
+
+
+#detail_body{
+    font-size: 16px;
+    margin: auto;
+    text-align: left ;
+    display: block;
+    width: 75%;
+    position: relative;
+    text-decoration: dashed underline;
+    text-decoration-color: #c8c7c7;
+    text-underline-offset : 7px;
+    line-height: 200%;
+
+    /* background: linear-gradient(180deg, rgba(255,255,255,0) 50%, #FFD0AE 50%); */
+}
+
+#detail_date{
+    font-size: 16px;
+    margin: auto;
+    text-align: right ;
+    display: block;
+    width: 75%;
+    position: relative;
+}
+
+@media ( min-width: 1000px ) {
+    #detail_writer{
+        font-size: 22px;
+        margin: auto;
+        margin-top: 70px;
+        text-align: left;
+        display: block;
+        width: 46%;
+        padding: 10px 0px;
+        position: relative;
+        text-decoration: wavy underline;
+        text-decoration-color: #c8c7c7;
+        text-underline-offset : 7px;
+    }
+    
+    
+    #detail_body{
+        font-size: 22px;
+        margin: auto;
+        text-align: left ;
+        display: block;
+        width: 46%;
+        position: relative;
+        text-decoration: dashed underline;
+        text-decoration-color: #c8c7c7;
+        text-underline-offset : 7px;
+        line-height: 200%;
+    }
+    
+    #detail_date{
+        font-size: 22px;
+        margin: auto;
+        text-align: right ;
+        display: block;
+        width: 46%;
+        position: relative;
     }
 }
