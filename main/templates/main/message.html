@@ -3,23 +3,24 @@
 
 {% block content %}
 
-    <img id="arrive_letter" src="https://ifh.cc/g/WHVqSj.png">
+    <img id="arrive_letter" src="https://ifh.cc/g/1XqnwX.png">
+    <a id="letter_ment">제목을 누르면 상세 내용을 볼 수 있어요!</a>
 
     <!-- {{blogs}} -->
     <div class="message">
         {% for blog in blogs %}
-        <div id="message" onclick="modal()" style="cursor: pointer;">
-            <script type="text/javascript">
+        <div id="message">
+            <!-- <script type="text/javascript">
                 function modal()  {
-                    location.href="{% url 'main:showdetail' blog.id %}"
+                        location.href="{% url 'main:showdetail' id=blog.id %}"
                     }
-            </script>
+            </script> -->
             <div id="message_content">
                 <div id="blog_id">
                     <a id="blog_id">#{{blog.id}}</h3>
                 </div>
                 <!-- <a id="blog_writer">{{blog.writer}}</h3> -->
-                <a id="blog_title">{{blog.title}}</a>
+                <a id="blog_title" href="{% url 'main:showdetail' blog.id %}">{{blog.title}}</a>
                 <!-- <a id="blog_body">{{blog.body}}</a> -->
             </div>
             <!-- <div id="blog_time">

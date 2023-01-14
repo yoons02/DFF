@@ -179,9 +179,15 @@ body {
     border-radius: 5px; */
 }
 
-#message_content{
-
+#letter_ment{
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
 }
+
 
 #blog_id{
     width: 10px;
@@ -191,6 +197,8 @@ body {
 #blog_title{
     position: relative;
     margin-left: 40px;
+    text-decoration: none;
+    color: black;
 }
 
 #blog_time{
@@ -233,7 +241,8 @@ body {
 
     #blog_title{
         position: relative;
-        margin-left: 60px;
+        margin: 60px;
+        /* padding: 10vh 60vw 6vh 1.5vw; */
     }
 
     #blog_time{
@@ -487,7 +496,7 @@ body {
     width: 75%;
     padding: 10px 0px;
     position: relative;
-    text-decoration: wavy underline;
+    text-decoration: underline;
     text-decoration-color: #c8c7c7;
     text-underline-offset : 7px;
 }
@@ -527,7 +536,7 @@ body {
         width: 46%;
         padding: 10px 0px;
         position: relative;
-        text-decoration: wavy underline;
+        text-decoration: underline;
         text-decoration-color: #c8c7c7;
         text-underline-offset : 7px;
     }
@@ -554,4 +563,11 @@ body {
         width: 46%;
         position: relative;
     }
+}
+
+#mentor_profile{
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 80%;
 }
