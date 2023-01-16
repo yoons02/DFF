@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 #logo {
     width : 160px;
     height: 30px;
@@ -66,7 +70,7 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: #F79400;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 10px 15px;
 }
 
@@ -75,7 +79,7 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: #F79400;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 10px 15px;
 }
 
@@ -473,12 +477,18 @@ body {
     }
 
     #arrive_letter{
-        width: 90%;
+        width: 70%;
         align-items: center;
         display: block;
         margin: auto;
     }
 }
+
+#letter_logo{
+    margin-top: 40px;
+    width: 160px;
+}
+
 
 .detail{
     text-align: center;
@@ -490,7 +500,7 @@ body {
 #detail_writer{
     font-size: 16px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 10px;
     text-align: left;
     display: block;
     width: 75%;
@@ -524,13 +534,14 @@ body {
     display: block;
     width: 75%;
     position: relative;
+    margin-bottom: 40px;
 }
 
 @media ( min-width: 1000px ) {
     #detail_writer{
         font-size: 22px;
         margin: auto;
-        margin-top: 70px;
+        margin-top: 20px;
         text-align: left;
         display: block;
         width: 46%;
@@ -562,7 +573,15 @@ body {
         display: block;
         width: 46%;
         position: relative;
+        margin-bottom: 70px;
     }
+}
+
+#mentor_ment{
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 100%;
 }
 
 #mentor_profile{
@@ -570,4 +589,55 @@ body {
     align-items: center;
     margin: auto;
     width: 80%;
+}
+
+.center_webex{
+    text-align: center;
+}
+
+.team_webex{
+    text-align: center;
+}
+
+
+#center_webex{
+    width: 40%;
+    margin: 1%;
+    cursor: pointer;
+}
+
+#first_1{
+    width: 40%;
+    display: inline;
+    margin: 1%;
+    cursor: pointer;
+}
+
+#first_2{
+    width: 40%;
+    display: inline;
+    margin: 1%;
+    cursor: pointer;
+}
+
+@media(min-width: 1000px){
+    #center_webex{
+        width: 17%;
+        margin: 1%;
+        cursor: pointer;
+    }
+    
+    #first_1{
+        width: 17%;
+        display: inline;
+        margin: 1%;
+        cursor: pointer;
+    }
+    
+    #first_2{
+        width: 17%;
+        display: inline;
+        margin: 1%;
+        cursor: pointer;
+    }
 }
