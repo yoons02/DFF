@@ -4,6 +4,7 @@ from django.db import models
 
 class Blog(models.Model):
     id = models.AutoField(primary_key=True)
+    phone = models.CharField(max_length=4, null=True)
     title = models.TextField(max_length=20)
     writer = models.CharField(max_length=20)
     pub_date = models.DateTimeField()

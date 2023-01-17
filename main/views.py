@@ -56,6 +56,7 @@ def showdetail(request, id):
 def create(request):
     new_blog = Blog()
     new_blog.writer = request.POST['writer']
+    new_blog.phone = request.POST['phone']
     new_blog.title = request.POST['title']
     new_blog.pub_date = timezone.now()
     new_blog.body = request.POST['body']
