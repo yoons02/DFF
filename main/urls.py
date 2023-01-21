@@ -17,6 +17,7 @@ urlpatterns = [
     path('new/', views.showNew, name="showNew"),
     path('pwd/', views.showPwd, name="showPwd"),
     path('pwd_2/', views.showPwd_2, name="showPwd_2"),
+    path('pwd_3/', views.showPwd_3, name="showPwd_3"),
     path('complete/', views.showcomplete, name="showcomplete"),
     path('create/', views.create, name="create"),
     path('delete/<str:id>', views.delete, name="delete"),

@@ -49,6 +49,9 @@ def showPwd(request):
 def showPwd_2(request):
     return render(request, 'main/pwd_2.html') 
 
+def showPwd_3(request):
+    return render(request, 'main/pwd_3.html') 
+
 def showdetail(request, id):
     blog = get_object_or_404(Blog, pk=id)
     return render(request, 'main/detail.html', {'blog':blog})
