@@ -61,7 +61,7 @@ def create(request):
     new_blog.pub_date = timezone.now()
     new_blog.body = request.POST['body']
     new_blog.save()
-    return redirect('main:showdetail', new_blog.id)
+    return redirect('main:showcomplete')
 
 def delete(request, id):
     delete_blog = Blog.objects.get(id = id)
