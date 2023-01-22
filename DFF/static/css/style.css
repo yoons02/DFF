@@ -251,7 +251,7 @@ a{
     text-align: center;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 500px){
     #letter_ment{
         display: block;
         align-items: center;
