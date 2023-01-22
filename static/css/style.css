@@ -917,5 +917,5 @@ li{
     --bs-pagination-disabled-border-color: var(--bs-border-color);
     display: flex;
     padding-left: 0;
-    list-style: none;
+    list-style: none; 
 }
