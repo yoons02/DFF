@@ -36,7 +36,9 @@ li{
 }
 
 #by{
-    width : 130px;
+    width : 170px;
+    margin-left: 230px;
+    padding: 20px;
 }
 
 .navbar-toggler {
