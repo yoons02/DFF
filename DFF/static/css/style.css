@@ -11,6 +11,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style:none;
+}
+
 #logo {
     width : 160px;
     height: 30px;
@@ -29,6 +33,12 @@ a{
 
 #blog_logo{
     width : 95px;
+}
+
+#by{
+    width : 170px;
+    margin-left: 230px;
+    padding: 20px;
 }
 
 .navbar-toggler {
