@@ -247,10 +247,20 @@ a{
     align-items: center;
     margin: auto;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
 }
 
+@media(min-width: 500px){
+    #letter_ment{
+        display: block;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
 #blog_id{
     width: 10px;
