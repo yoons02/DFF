@@ -51,11 +51,11 @@
             {% for page_number in venues.paginator.page_range %}
             {% if page_number >= venues.number|add:-5 and page_number <= venues.number|add:5 %}
             {% if page_number == venues.number %}
-            <li class="page-item active" aria-current="page">
+            <li class="page-item active bg-warning" aria-current="page">
                 <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
             </li>
             {% else %}
-            <li class="page-item">
+            <li class="page-item bg-warning">
                 <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
             </li>
             {% endif %}
